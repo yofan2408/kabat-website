@@ -1,0 +1,13 @@
+.mr{
+    float: right;
+    list-style-type: none;
+}
+.butty{
+border: none;
+transition:0.2s;
+transform: scale(1);
+}
+.butty:hover{
+transform: scale(1.1);
+transition:0.2s;
+}

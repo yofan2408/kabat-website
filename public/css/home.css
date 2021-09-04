@@ -1,0 +1,434 @@
+.nobd-nobg{
+    background: none;
+    border:none
+}
+/* Monitoring */
+.txt{
+    font-family: cursive;
+}
+
+.garis-btn{
+    height: 100%;
+    position: absolute;
+    border-radius:0.1px;
+    margin-left: 10px;;
+}
+.collg{
+    height: 420px;
+    background: rgba(108, 122, 137, 0.7) ;
+    max-height: 420px;
+}
+.collg-Chart{
+    height: 420px;
+    background: rgba(108, 122, 137, 1) ;
+    max-height: 420px;
+}
+.back{
+    background: rgba(108, 122, 137, 1);
+}
+.back-chart{
+    background: rgba(108, 122, 137, 1)
+
+}
+.textup{
+    margin-top:5%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.textup-chart{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top:50px;
+}
+.logo-dashboard{
+    margin-top:17%;
+    font-size: 70px;
+    color : rgba(255, 203, 5, 1)
+}
+.logo-panah{
+        margin-top:130px;
+        font-size: 100px;
+        color : rgba(255, 203, 5, 1);
+        animation: panah 2s infinite;
+        right: 10px;
+        position: absolute;
+    }
+@keyframes panah {
+    50%{translate: -10px 0px;}
+}
+.logo-chart{
+    margin-top:7%;
+    font-size: 100px;
+    color : rgba(255, 203, 5, 1)
+}
+.garis-btns{
+    margin-top :10px;
+}
+.lines{
+        position: absolute;
+        left: 15px;
+        height: 64%;
+        width: 3px;
+        background-color: lightgray
+}
+    /* Kelas Kandang */
+    .logo-kandang{
+        margin-top:12%;
+        font-size: 100px;
+        color : rgba(255, 203, 5, 0.7);
+        animation: lk 2s infinite;
+    }
+    @keyframes lk {
+        50%{translate: 0px 10px 150px}
+    }
+    #d_kandang{
+        font-family: cursive;
+        margin-top : 10%;
+        font-size: 25px;
+        color: white;
+    }
+        #entry{
+            font-family: cursive;
+            font-size: 15px;
+            color:white;
+            }
+
+
+    /* Kelas Suhu */
+    #d_suhu, #suhu{
+    font-family: cursive;
+    margin-top : 10px;
+    font-size: 35px;
+    color:white;
+    }
+    .chartWrappers{
+    width: 100%;
+    height: 100%;
+    animation: cw 0.5s;
+    padding :5px
+    }
+
+    /* Kelas kelembapan */
+    #d_kelembapan ,#kelembapan{
+    font-family: cursive;
+    margin-top : 10px;
+    font-size: 35px;
+    color:white;
+    }
+
+    /* Kelas Berat */
+    #d_berat , #berats{
+    font-family: cursive;
+    margin-top : 10px;
+    font-size: 35px;
+    color:white;
+
+    }
+
+/* animasi */
+
+#chart-{
+    animation : chart- 1s;
+}
+@keyframes chart- {
+    0%{translate: 0px 1000px;}
+    10%{translate: 0px 500px;}
+}
+#catatans{
+    animation: catatans 1s;
+}
+@keyframes catatans {
+    0%{translate: 520px 0px;}
+    40%{translate: 520px 0px;}
+}
+#status{
+    animation : status 1s;
+}
+@keyframes status {
+    0%{translate: -850px 0px;}
+    70%{translate: -450px 0px;}
+}
+#halaman_awal{
+    animation: hawal 0.7s;
+    opacity: 1;
+}
+#halaman_suhu{
+    animation: suhu 0.7s;
+}
+#halaman_kelembapan{
+    animation: kelembapan 0.7s;
+    margin-left:40px;
+}
+#halaman_berat{
+    animation: berat 0.7s;
+}
+@keyframes hawal {
+    0%{translate : -252px 0px}
+}
+@keyframes suhu {
+    0%{transform: scale(0.9);}
+}
+@keyframes kelembapan {
+    0%{transform: scale(0.9);}
+}
+@keyframes berat {
+    0%{transform: scale(0.9);}
+}
+
+
+
+
+
+
+/* Catatan */
+
+body{
+    background: #F4F7FD;
+    max-width: 100%;
+}
+
+.card-margin {
+    margin-bottom: 1.875rem;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+
+.card .card-header.no-border {
+    border: 0;
+}
+.card .card-header {
+    background: none;
+    padding: 0 0.9375rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+.card-header:first-child {
+    border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
+}
+
+.widget-49 .widget-49-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(253, 227, 167,0.8);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  animation: primary 2s infinite;
+  cursor :pointera
+}
+@keyframes primary {
+    10%{    transform: scale(1);    }
+    20%{    transform: scale(1.01);    }
+    30%{    transform: scale(1.02);    }
+    40%{    transform: scale(1.03);    }
+    50%{    transform: scale(1.04);    }
+    55%{    transform: scale(1.05);    }
+    60%{    transform: scale(1.04);    }
+    70%{    transform: scale(1.03);    }
+    80%{    transform: scale(1.02);    }
+    90%{    transform: scale(1.01);    }
+    100%{    transform: scale(1);    }
+  }
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-day {
+  color: #666666;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: cursive;
+  line-height: 1;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-date-primary .widget-49-date-monthyear {
+  color: #666666;
+  line-height: 1;
+  font-size: 1rem;
+}
+#my{
+    font-family: cursive;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-pro-title {
+  color: black;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-meeting-info .widget-49-meeting-time {
+  color: grey;
+  font-size: 15px;
+  font-family: cursive;
+
+}
+
+.widget-49 .widget-49-meeting-points {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: .5rem;
+  max-height: 230px;
+
+}
+
+.widget-49 .widget-49-meeting-points .widget-49-meeting-item {
+  color: #727686;
+  font-family: cursive;
+  font-size: 12px;
+}
+.widget-49 .widget-49-meeting-points .widget-49-meeting-item2  {
+    color: black;
+    margin-left:10px;
+    font-size: 18px;
+    margin-top:-5px;
+    text-decoration: none;
+  }
+
+.widget-49 .widget-49-meeting-action {
+  text-align: right;
+}
+
+.widget-49 .widget-49-meeting-action a {
+  text-transform: uppercase;
+}
+
+/* Chart */
+
+.card-users{
+    font-family:cursive;color:white
+}
+.chartWrapper{
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    animation: cw 0.5s;
+}
+.chartWrapper2{
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    animation: cw2 0.5s;
+}
+.chartWrapperUser{
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    animation: cw2 0.5s;
+}
+@keyframes cw {1%{ opacity: 0.1};}
+@keyframes cw2 {1%{ opacity: 0.1};
+}
+.cc{
+    height:220px;
+    max-height:220px;
+    width:60%;
+    border-radius: 10px;
+}
+.cc2{
+    margin-left:3%;
+    height:220px;
+    max-height:220px;
+    width:37%;
+    background: radial-gradient(rgba(250, 190, 88, 0.8),rgba(108, 122, 137, 1) 15%);
+}
+.userpoint{
+    margin-top:60px;
+    background-color: white;
+    padding:10px;
+    color:#FFA500;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: 0px 0px 5px orange;
+    transform: scale(1);
+    transition: 0.3s;
+    cursor: pointer;
+    animation : us 2s infinite;
+}
+@keyframes us {
+    50%{translate: 0px 5px}
+}
+.userpoint:hover{
+    transform: scale(1.3);
+}
+.button-chart{
+    width:80px;background:none;color:black;border:2px solid rgba(108, 122, 137, 1)
+}
+.garis{
+    border:1px solid black;width:25%;margin-top:10px;color:gray;opacity:0.3
+}
+.delete-catatan{
+    border:none;
+    float:right;
+    color:white;
+    background:red;
+    transition: 0.1s;
+    transform: scale(1);
+}
+.delete-catatan:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+}
+.b{
+    width:30px;
+    height:30px;
+
+}
+.bp{
+    margin-left:-10px;
+    margin-top:-10.5px;
+    font-size: 23px;
+    position: absolute;
+}
+.tambah-text{
+    color:black;
+    padding:5px;
+    margin-left:2px;
+    margin-top:-2px;
+    font-size: 15px ;
+    font-family: cursive;
+}
+.ii{
+    padding:10px;
+    position:absolute;
+    color:orange;
+    font-size:100px;
+    opacity:0.1;
+    top:10px;
+    right:10px;
+    transition: 0.3s;
+}
+.iii{
+    font-size:20px;
+    color : white;
+    margin-left:5px;
+    opacity: 1;
+    background-color: rgba(108, 122, 137, 0.7);
+}

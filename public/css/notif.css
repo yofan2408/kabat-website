@@ -1,0 +1,131 @@
+/* Universal button notif */
+.act-btn3{
+    background:#FFA500;
+    width: 47px;
+    height: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: ease all 0.1s;
+
+  }
+
+   /* Pop Up-in */
+   .popup {
+    cursor: pointer;
+    position: fixed;
+    bottom:50px;
+    right:50px;
+}
+
+/*  popup */
+.popup .popupbox {
+  visibility: hidden;
+  width:350px;
+  background-color: rgba(255,255,255,0.9);;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 90%;
+  right:250%;
+  transition : 0.1s;
+  transform:scale(0);
+  box-shadow: 0px 0px 4px 2px #FFA500;
+}
+.popup .show {
+  visibility: visible;
+  transform: scale(1.25);
+  transition : 0.2s;
+}
+.notify{
+    color:white;
+    font-size: 15px;
+    float:left;
+    padding:6px;
+    background: #FFA500;
+    width:100%;
+    }
+    .notify-txt{
+        text-align: left;
+        font-family: arial;
+        margin-left:10px;
+    }
+
+ /* extra */
+    .body-notification {
+        position: relative;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        max-height:300px;
+        max-width:400px;
+        color: #474747;
+        border-radius : 10px;
+    }
+    .post {
+        position: relative;
+        padding-left: 11px;
+        padding-top: 10px;
+        z-index: 2;
+    }
+
+    .line {
+        position: absolute;
+        left: 15px;
+        height: 100%;
+        width: 3px;
+        background-color: lightgray;
+    }
+    .circle {
+        background-color: #fff;
+        left: -9.5px;
+        color: #4071a3;
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 2px orange solid;
+
+    }
+    .post p {
+        margin-top: 0;
+        padding: 0 15px;
+    }
+    .time {
+        left: -3px;
+        position: relative;
+        font-size: 12px;
+        display: block;
+        line-height: 1;
+        cursor:copy;
+    }
+
+.no{
+    color:grey;
+    text-align: center;
+    position: relative;
+    padding:10px;
+
+}
+
+.box-notif{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:#eb5333;
+    margin-left:20px;
+    margin-top:-50px;
+    animation : box 1s infinite;
+}
+@keyframes box {
+    50%{transform: scale(1.1);};
+    100%{transform: scale(5);};
+}
+
+.pentung{
+    padding: 10px;
+    margin-top: -10px;
+    color: white;
+    cursor: pointer;
+}
